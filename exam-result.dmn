@@ -9,17 +9,17 @@
     </dmn:informationRequirement>
     <dmn:decisionTable id="_22A2F61A-D555-4E73-9CA4-FBE23782739A" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
       <dmn:input id="_A2C2E335-18CD-4B94-A249-04CB486DDA97">
-        <dmn:inputExpression id="_794B29BC-4692-44A9-9C1E-17FE06B2FF3E" typeRef="number">
+        <dmn:inputExpression id="_C5E0F5AD-BA7F-4F64-8A0E-C56C84FBC4FB" typeRef="number">
           <dmn:text>Score</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_FBFBBE03-F6B2-4703-8F1D-7AC90A3D3AC2"/>
       <dmn:annotation name="annotation-1"/>
       <dmn:rule id="_F228310C-411E-421F-84E4-DD559DB5ADCA">
-        <dmn:inputEntry id="_C2EBE49C-17B3-4705-AB4C-79D6905ECAA2">
+        <dmn:inputEntry id="_7654FE67-B956-49D6-9806-0823BA67D613">
           <dmn:text>&lt;50</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry id="_7102A429-ED3E-4391-8A3A-9932FE0704CA">
+        <dmn:outputEntry id="_B46512E7-D337-4E51-84A2-7C78D3FA5F83">
           <dmn:text>"fail"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
@@ -27,11 +27,22 @@
         </dmn:annotationEntry>
       </dmn:rule>
       <dmn:rule id="_F973CD41-ADF8-4399-9A56-152359ED43B9">
-        <dmn:inputEntry id="_82D3C003-51C7-4F95-A09E-3839DDE65D8A">
-          <dmn:text>&gt;=50</dmn:text>
+        <dmn:inputEntry id="_E15A43A3-9DCD-4C85-BD7A-210BF62E5777">
+          <dmn:text>[50..80]</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry id="_0476C00D-CDB0-4BEC-9744-563F2EC9BDD8">
+        <dmn:outputEntry id="_47D5815D-C4F2-4DFC-92BB-7AC6586DF0BA">
           <dmn:text>"pass"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="_8B639391-0466-4284-894F-65AE5E761247">
+        <dmn:inputEntry id="_8E4E4400-62F7-47E5-BC6C-3A6064FE2051">
+          <dmn:text>&gt;80</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_43FD7909-0E42-4DF1-96E2-7F9FBD9BBE03">
+          <dmn:text>"distinction"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
